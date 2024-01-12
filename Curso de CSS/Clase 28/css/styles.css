@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: dimgray;
+    color: wheat;
+}
+.text{
+    background-color: lightcoral;
+}
+.link{
+    background-color: #FFF;
+    display: inline-block;
+    width: 200px;
+} 

@@ -1,0 +1,11 @@
+/*¿Cómo fucniona css?
+Especificidad -> Establece cómo de específico es un selector para saber que estilo aplicar
+el caclulo se realiza con la siguiente formula
+    Etiquetas y pseudo elementos 001
+    Clases, atributos y pseudoclases 010
+    ID'S 100
+    Estilos de línea 1000
+    !important  GANA A TODO
+Cascada-> Fucniona siempre que la especificdad sobre el elemento sea el mismo
+Herencia->Es la capacidad que tiene algunos elementos de heredar algunas propiedades de sus elementos contenedores(padres,abuelos, etc)
+*/   

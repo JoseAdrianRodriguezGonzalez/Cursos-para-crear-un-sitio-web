@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tipos de input</title>
+</head>
+<!--
+
+    <input type>
+    button-> Se comporta igual que un botón    
+    submit-> se utiliza para enviar el formulario
+    
+    <input de tiempo>
+    date-> se utiliza para introducir una fecha
+    datetime-> obsoleto
+    datetimelocal->Fecha y hora, no funciona en firefox
+    week-> Se utiliza para introducir el numero de semanas del año
+    time-> se utiliza para introducir una hora
+    month-> Se utiliza para introducir un mes
+    TIP: Se recomienda usar datetime-local y time para seleccionar una fecha y hora
+    
+    <inputs paara moviles>
+    search-> se utiliza para las barras de busqueda
+    tel-> Se utiliza para introducir números telefonicos
+    email-> Se utiliza para introducir un email
+    password->Se utiliza para contraseña
+    url-> se utiliza para introducir urls 
+
+    hidden-> campo oculto , puede contener valor pero no se mostrara
+    
+    <inputs extra>
+    color-> Se utiliza para especificar un color
+    number-> Se utiliza para poner valores númericos
+    range->Se utiliza para establecer un rango
+    reset->Se utiliza para resetear el formulario
+    text-> valor por defecto
+
+
+   
+   
+-->
+<body>
+    <!--Button-->
+    <form >
+    <input type="button" value="Enviar">
+    <button>Enviar</button>
+    <!--Input de fechas-->
+    <input type="date">
+    <input type="datetime-local" >      <!--Este no se ve en firefox-->
+    <input type="date">
+    <input type="time">
+    <input type="month">
+    <input type="week">
+    <!--Input para moviles-->
+    <div>
+        <label> search
+            <input type="search">
+        </label>
+    </div>
+    <div>
+        <label> Telefono
+            <input type="tel">
+        </label>
+    </div>
+    <div>
+        <label> Email
+            <input type="email">
+        </label>
+    </div>
+    <div>
+        <label> Contraseña
+            <input type="password">
+        </label>
+    </div>
+    <div>
+        <label> Url
+            <input type="url">
+        </label>
+    </div>
+    <!--Input extra-->
+    <input type="color">
+    <input type="number">
+    <input type="range" step="10" min="0" max="100"> 
+    <input type="reset">
+    <input type="text">
+</form>
+</body>
+</html>

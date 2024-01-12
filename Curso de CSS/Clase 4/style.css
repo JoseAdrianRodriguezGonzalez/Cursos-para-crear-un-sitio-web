@@ -1,0 +1,23 @@
+body{
+    background-color: mediumslateblue;
+
+}
+h1{
+    color: indigo;
+    width: 300px;
+    height: 100px;
+    text-decoration: limegreen;
+    text-emphasis-color: red;
+}
+p{
+    width: 320px;
+    color: midnightblue;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 34;
+    font-family: cursive;
+    font-style: italic;
+    white-space: inherit;
+    
+}
+

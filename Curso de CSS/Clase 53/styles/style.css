@@ -1,0 +1,34 @@
+/*
+    Formtaos para fuentes
+        True type font(TTF)-> Fue el primer formato estandar
+
+        Open True Type Font (OTF) -> Facilita o omplementa la creación de las curvas
+
+        Web Open Font Format (WOFF)(WOFF2)-> Es un formato mucho más lñigero y mejora el rendimiento. Funciona a tráves de metadatos. WOFF tiene soporte total y WOFF2 no funciona en internet explorer
+
+        Scalable Vegtor Graphics -> Para efectos y animaciones sobre el texto, no es recomendable usarlo en el texto generico en la web, tiene muchos problemas
+
+        Embebed Open Type(EOT) -> Primer formayo digital propuesto para sitios web y es comprimido. Se quedo como una propuesta pero no pasó a ser estandar
+    Regla @font-face
+        Esta es la forma de utilizar fuentes que tenermos descargadas y que no traemos de un servidor remoto,  cuando usamos Google Fonts, esto es lo que está pasando por detrás
+
+        La sintaxis es: 
+        @font-face{
+            font-family: Nombre de la familia, se lo asignamos nosotors:
+            src: aqui pondremos dos tipos de valores.
+            local() -> pondremos el nombre de la fuente para busarlo en el ordenador del usuario,de esa forma podremos evitar descargarla
+            url() -> Si no encontramos esa fuente procedemos a descargarla
+            Existe otro vlor, menos usado que es format
+            format()-> Este valor lo pasaremos de forma opcional si queremos ser más especificos con la fuente que vamos a buscar o descargar, sdi no lo ponemos cogerá el primer formato soportado, si lo ponemos solo usará el que  hemos establecido y si no lo encuentra no hará nada
+        }
+        Podemos añadirle más valores como font-style, font.weight y font-display(experimental) pero esos son opcionales
+*/
+body{
+    background-color: #333;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif
+}
+.icon{
+    font-size: 2rem;
+    color: red;
+}

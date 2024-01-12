@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--
+        Enlaces, también conocidos como links, su objetivo es conectar una página web a otra, con un recusro tanto interno como externo o con otro sitio web
+
+        Tienen el atributo obligatorio href donde le especificamos la ruta del recuso o sitio que queremos obtener
+        
+        También tiene el atributo target, que configura como queremos visuailzar el recurso o sitio que solicitamos
+    -->
+    <!--
+        Rutas absolutas: tienen un protocolo http o https y son unicos en la red, se suelen utilzar para rutas externas
+        Rutas relativas:Pueden ser relativa al punto donde encontramos o relativva a la raíz del proyecto.
+        No usan protocolo si el recurso se encuentra al mismo nivel con la misma carpeta, pondremos unicamente el nombre del archivo
+        Si necesitamos salir de la carpeta actual usremos ../ y se poneuno por cada nivel de la que queramos salir
+    -->
+    <!--
+        Atributos de enlaces:
+        Target: Define donde se abrirá el recurso solicitado. Por norma general simepre que usas rutas absolutas se ponen como blank. El valor por defecto es _self
+        Download, Atributo booleano que sirve para descargar el recuros solicitado
+        IMPORTANTE;el recurso debe estar en el mismo servidor
+    -->
+</head>
+<body>
+    <h1>Home</h1>
+    <a href="Atributos_comunes_video_21.html">Ir a atributos comunes video 21</a>
+    <!--Rutas relativas al punto donde nos encontrarmos
+    Aquí, si tenemos un sitio que está guardado en varias carpetas, se necesita poner un diagonal así como en el ejemplo de aca abajo--><!--Ruta relativa de raíz-->
+    <a href="/Enlaces/Index.html"Download>Ir a index</a>
+    <!--Aquí si necesitamos salir de una pagina, se necesita poner ../ si es un nivel, si son dos se debe de hacer ../../ y así sucesivamente-->
+    <a href="../Index.html" >Ir a index</a>
+    <!--Ruta absoluta-->
+    <a href="https://google.com"target="_blank">Ir a google</a>
+    <a href="/assets/images/Gato.jpg"Download>descargar gato</a>
+</body>
+</html>

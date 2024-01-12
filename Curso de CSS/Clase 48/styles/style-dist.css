@@ -1,0 +1,43 @@
+/*
+    Colores 
+        La mayoria de las pantallas funcionan conn un modo de color aditivo.La suma de RGB da como resultado un blanco. Tenemos cariaas formas de dar color en CSS
+
+        Keywords-> Palabras clave que representan colores https://www.w3.org/wiki/CSS/Properties/color/keywords
+
+        CurrentColor: Es una palabra calve que se puede usar en lugar de cualquier valor de color y usará el valor ya sea establecido o heredado en la propiedad color 
+        
+        RGB/RGBA
+            En el modo RGB tenemos tres canales (Red,Green,Blue) y tenemos 8 bts de color por canal,(cada bit tiene dos posibles valores 0 ó 1) lo que significa que tenemos 2^8 posibles valores, que van desde 0 hasta 255
+
+            Esto nos da un total de 255*255*255 = 16,581,375 colores
+
+            Su sintáxis es rgb(R,G,B)
+            
+            Si ponemos todos los canales a 0 tendremos un negro puro y si lo ponemos a 255 tendremos un blanco
+
+            Para movernos por la gama de grises debemos poner los tres canales con el mismo valor, si ponemos los 3 canales a 128 tendremos el gris puro
+    
+            el modo RGB nos da la opción de utilizar un cuarto canal que correspondería al canal alpha, es decir, la transparencia, y su valor ca desde 0 a 1, Tenemos dos sintaxis para utilizar el canal alpha 
+
+    rgba(R,G,B,A)
+    rgb(R,G,B/A)
+
+*/
+body{
+    margin:0;
+    background-color: #333;
+    color: red;
+}
+.box{/*
+    border-top: 100px solid red;
+    border-left :680px solid transparent;
+    border-right: 680px solid transparent;*/
+    width: 200px;
+    height: 200px;
+    background-color: rgb(128,128, 128);
+}
+.box-1{
+    width: 200px;
+    height: 200px;
+    background-color: lightcoral;
+}

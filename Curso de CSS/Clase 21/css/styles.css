@@ -1,0 +1,42 @@
+/*
+
+    Padding:
+    Es la propiedad que nos permite generrar espacio interno entre el borde y la caja
+    Es un shorthand (propiedad abreviada) que controla los 4 laados posibles a los que dar padding
+    padding-top: padding suprerior
+    padding-right: padding derecho
+    padding-bottom: padding-inferior
+    padding-left: padding izquierdo
+    admite hasta 4 valores que van en el orden de las agujas del reloj
+    4 valores ->padding: top right bottom left
+    3 valores -> padding: top left/right bottom
+    2 valores ->padding rop/ bottom left/right
+    1 valor -> paddiing: top/right/bottom/left
+
+*/
+body{
+    background-color: #333;
+    color: #fff;
+}
+.box{
+    background-color: purple;
+    width: 200px; 
+    height: 200px;
+    margin:auto ;
+}
+.inline{
+    background-color:lightcoral  ;
+    color: inherit;
+    padding-left :100px
+}
+.boton{
+background-color: darkcyan;
+padding-top: 20px;
+padding-bottom: 20px;
+
+}
+.button1{
+    background-color: salmon;
+    margin-left: 570px;
+    padding: 25px 50px;
+}

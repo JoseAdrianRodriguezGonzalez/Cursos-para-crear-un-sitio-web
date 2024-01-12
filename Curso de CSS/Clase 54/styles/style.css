@@ -1,0 +1,36 @@
+/*
+    Transformaciones de t4exto
+    text-transform: Esta propiedad nos permite hacer transformaciones esteticas n nuestro texto.
+    Admite los valores: 
+        none: No se aplica ninguna tranformación
+        uppercase: El texto se pondra en mayusculas 
+        lowercase: El texto se pondrá en minúsculas capitalize: Transforma la primera letra de cadea palabra en mayúsucula
+    Adornos en el texto
+        Text-decoration: Esta propiedad nos permite controlar la línea que podemos poner en los textos.
+        Admite los valores
+            none: Elimina cauqluier linea
+            underline: Coloca una linea debajo del texto
+            overline: Coloca una linea sobre el texto
+            Line-through: Coloca una linea tacada el texto
+        Text-shadow: Fucniona exactamente igual que box-shadow, con la uni8ca diferencia que no admite el valor iset ni la expansion de la sombra
+        Los valores son::afterOffsetX: Desplazamiento horizontal
+        offsetY: desplazamiento vertical
+        blur: desenfoque
+        color: color, por defecto coge el del texto 
+*/
+body{
+    background-color: #333;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif
+}
+.icon{
+    font-size: 2rem;
+    color: red;
+}
+.text{
+    text-transform: capitalize ;
+    text-shadow: 2px 2px red,2px 4px blue  ;
+}
+.link{
+    text-decoration: line-through ;
+}
