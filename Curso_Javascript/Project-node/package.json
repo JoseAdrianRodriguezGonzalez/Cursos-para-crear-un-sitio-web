@@ -1,0 +1,21 @@
+{
+  "name": "project-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js ",
+    "dev": "nodemon src/app.js "
+  },
+  "keywords": [
+    "first",
+    "project",
+    "nodejs"
+  ],
+  "author": "JoseAdrianRodriguezGonzalez",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "nodemon": "^3.0.2"
+  }
+}
