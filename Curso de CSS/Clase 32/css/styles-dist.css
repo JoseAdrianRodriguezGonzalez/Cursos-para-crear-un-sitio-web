@@ -1,0 +1,28 @@
+/*
+    La propiedad position nos permite posicionar los elementos, hay algunos conceptos que se deben conocer para entender position
+
+    Flujo de renderizado -> Por norma general, los elementos se dibujan de izquieraa a derecha y de arriba abajo. El punto 0,0 de los elementos, por norma general, es la esquina superior izquierda
+
+    Espacio reservado -> Es el espacio que tiene un elemento asignado en el navegador.
+
+    Elemento posicionado ->Esto signfiica que el el eleemnto tiene la propiedad position con uin valort distinto de "static", que es el valor que tiene esta propiedad por defecto.
+
+    Stacking -> Contexto de apilamiento. Es el orden en el que se apilarán las cajas que se superponen
+
+    Al posicionar un elemento se habilitan 5 propiedad que podemos utilizar para mover los elementos en los 3 ejes
+
+        Top ->El elemento se moverá desde la parte superior la distancia que le hayamos indicado
+        
+        Right -> El elemento se moverá desde la parte derecha la distancia que le hayamos indicado
+
+        Bottom -> El elemento se moverá desde la parte inferior la dstancia que le hayamos indiciado
+
+        Left -> El elemnto se overá desde la parte izquierda la distancia que le hayamaos indicado
+         
+        z-index->os permite mover el elemento en el contexto de apilamiento (eje z)
+
+
+        NOTA: Si un elemento le declaramos la porpiedad top y/o left, las propiedades bottom y/o right no funcionan
+
+
+*/

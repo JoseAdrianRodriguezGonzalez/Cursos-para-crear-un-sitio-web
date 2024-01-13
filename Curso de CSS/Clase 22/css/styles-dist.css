@@ -1,0 +1,49 @@
+/*
+    Border:
+    Es la propiedad que nos permite modificar el borde de la caja
+    es un shorthand( propiedad abreviada) que agrupa 3 propiedades
+    Border-width: acnho del borde
+        border-top-width
+        border-right-width
+        border-bottom-width
+        border-left-width     Border-style: estilo del borde
+            border-top-style
+            border-right-style
+            border-bottom-style
+            border-left-style
+    Border-color: color del borde
+        border-top-color
+        border-right-color
+        border-bottom-color
+        border-left-color 
+
+*/
+body{
+    background-color: #333;
+    color: #fff;
+}
+.box{
+    background-color: purple;
+    width: 200px; 
+    height: 200px;
+    margin:auto ;
+}
+.inline{
+    background-color:lightcoral  ;
+    color: inherit;
+    padding-left :100px
+}
+.boton{
+background-color: darkcyan;
+padding-top: 20px;
+padding-bottom: 20px;
+
+}
+.button1{
+    background-color: salmon;
+    margin-left: 570px;
+    padding: 25px 50px;
+    border: 20px solid  white; 
+    border-left-width: 15px;
+    border-style:  outset;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Otras etiquetas de bloque</title>
+</head>
+<!--<adress>Se utiliza para aportar información de contacto para el article más cercano o para todo el body
+    <blockquote> Se utiliza para marcar las ciitas o otros autores o documentos. Se puede incluir el atribituo cite para poner un enlace al documento original o fuente
+    <pre> Se utiliza para tu codigo performateado que necesita ser representado igual que se escribio
+    <div> Se usa como división del documento, semánticamente no significa nada, es un contenedor generico que se usa generalmente para dar estilos a traves de css o para usar algo denominado "delegación de eventos" en javascript
+        <hr> Horiozntal rule, se utiliza para decirle al navegador que vamos a cambiar de tema-->
+<body>
+    <address>
+        Tony stark <br>
+        Malibú 10880  <br>
+        90265 <br>
+        California
+    </address>
+    <blockquote cite="https://culturizando.com/grandes-frases-voltaire/">
+        <p>
+            "No estoy de acuerdo con lo que dices, pero defenderé con mi vida tu derecho a expresarlo"
+        </p>
+    </blockquote>
+    <h2>Codigo de Arduino para mostrar algo en la pantalla</h2>
+    <pre>
+        #define SENSOR D3   //Se define el pin de dht
+DHT dht(SENSOR,DHT11);    //Crea objeto del tipo dht que define el pin y el tipo de dht 
+float temp, hum;    //Se crean dos variables del tipo float
+LiquidCrystal_I2C lcd(0x27, 16, 2);   //Se crea el objeto lcd, con la direccipon que tiene, su numero de colunmnas y filas
+void setup() {
+  
+  Wire.begin();   //Se inicializa el I2C
+  lcd.init();   //Se incializa el lcd
+  lcd.clear();    //Se limpia el lcd
+  lcd.setBacklight(HIGH); //enciende el led de fondo
+  dht.begin();  //Se inicializa el dht
+  lcd.setCursor(4,0);   
+  lcd.print("Bienvenido");
+  lcd.setCursor(2,1);
+  lcd.print("A nodeMCU");
+
+}
+
+
+void loop() {
+  lcd.clear();  //Se limpia el lcd
+ temp=dht.readTemperature();  //Se lee la temperatura
+ hum=dht.readHumidity();  //Se lee la humedad
+ lcd.setCursor(0,0);  //Se coloca el cursor en el 0,0
+ lcd.print("Temperat:"+String(temp)); //Se escribe "temperat:" con la temperatura
+  lcd.setCursor(0,1); //Se pone el cursor en el 0,1
+ lcd.print("Humedad:"+String(hum));   //Se escribe la humedad
+ delay(5000);   //Cada 5 segundos
+}
+    </pre>
+    <div>
+        <h2>Nombre</h2>
+        <p>Email</p>
+        <p>Descripción</p>
+    </div>
+    
+    Segunda guerra mundial
+    <hr>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime doloremque suscipit voluptate quos fuga praesentium doloribus culpa tempore veniam quibusdam cumque, blanditiis, adipisci iure autem nemo exercitationem incidunt, asperiores voluptatum.</p>
+</body>
+</html>

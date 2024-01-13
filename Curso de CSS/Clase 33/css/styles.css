@@ -1,0 +1,32 @@
+/*
+STatic-> Es el valor que tiene por defecto un elemento, con este valor el elemento NO ESTÁ POSICIONADO y por lo cuál, no lo podremos mover
+
+Relative-> El elemento mantendrá su posición y medidas en el flujo de renderizado y mantendrá su espacio reservado. Si lo movemos lo hará usando su posición en el html como puntoi de referencia */
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: dimgray;
+}
+.box{
+    width: 100px;
+    height: 100px;
+}
+.box1{
+    background-color: aqua;
+    position: relative;
+    left: 400px;
+}
+.box2{
+    background-color: brown;
+    position: relative;
+    left: 300px;
+}
+.box3{
+    background-color: steelblue;
+    position: relative;
+    bottom:200px;
+    left: 200px;
+}

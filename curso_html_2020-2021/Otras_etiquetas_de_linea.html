@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Otras etiqueta de línea</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<!--
+    <span> Es un contenedor de lína, equivalente a div, se suele usar para encerrr palabras o pequeños textos y darles estilo a traves de css o localizarlos desde JavaScript, semanticamente no significan nada
+        <q>Es el equivalente a blockquote, significa quote, por eso el de bloque se llama block, quote sirve para poner citas pero en la línea
+    <code> sirve para encerrar codigo que queremos representar visualmente, suele ir unio con la etiqueta pre
+
+        Entidades especiales en html-codigo ASCII
+        https://ascii.cl/es/codigos-html.htm
+-->
+<body>
+    <h1>Elementos de línea</h1>
+    <p>Lorem ipsum <span>dolor sit amet consectetur adipisicing elit. </span>  Eos a laborum architecto illo maiores accusantium esse impedit. <q> Optio voluptatem harum temporibus saepe iste quaerat </q>. Cum at cupiditate beatae ipsum laborum.</p>
+    <q>Soy John Cena</q>
+    <pre>
+        <code>
+            #define SENSOR D3   //Se define el pin de dht
+            DHT dht(SENSOR,DHT11);    //Crea objeto del tipo dht que define el pin y el tipo de dht 
+            float temp, hum;    //Se crean dos variables del tipo float
+            LiquidCrystal_I2C lcd(0x27, 16, 2);   //Se crea el objeto lcd, con la direccipon que tiene, su numero de colunmnas y filas
+            void setup() {
+              
+              Wire.begin();   //Se inicializa el I2C
+              lcd.init();   //Se incializa el lcd
+              lcd.clear();    //Se limpia el lcd
+              lcd.setBacklight(HIGH); //enciende el led de fondo
+              dht.begin();  //Se inicializa el dht
+              lcd.setCursor(4,0);   
+              lcd.print("Bienvenido");
+              lcd.setCursor(2,1);
+              lcd.print("A nodeMCU");
+            
+            }
+            
+            
+            void loop() {
+              lcd.clear();  //Se limpia el lcd
+             temp=dht.readTemperature();  //Se lee la temperatura
+             hum=dht.readHumidity();  //Se lee la humedad
+             lcd.setCursor(0,0);  //Se coloca el cursor en el 0,0
+             lcd.print("Temperat:"+String(temp)); //Se escribe "temperat:" con la temperatura
+              lcd.setCursor(0,1); //Se pone el cursor en el 0,1
+             lcd.print("Humedad:"+String(hum));   //Se escribe la humedad
+             delay(5000);   //Cada 5 segundos
+            }
+        </code>
+    </pre>
+    <p>
+        La etiqueta <code> &#60;h1&#62;</code> se utiliza para representar titulos de primer nivel
+    </p>
+</body>
+</html>

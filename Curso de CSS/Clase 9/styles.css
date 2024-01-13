@@ -1,0 +1,55 @@
+/*Selectores simples
+    Selectores elementales
+        *->Selector univseral
+        Nombre de la etiqueta->Selector de etiqueta
+    Selectores de atributo
+        id->Id del elemnto
+        clase-> Clase del elemento
+        otros atributos.
+        [ATRIBUTO] //DAR ESTILOS AL ATRIBUTO    
+        [atributo=valor]//Dar estilos al valor del atributo
+        [atributo^=valor]   //Verificar el valor del atributo es ese
+        [atributo*=valor]//Selecciona el valor que coincida independientemente de donde este
+        [atributo$=valor]//Busca los valores que están al final del valor
+        [atributo|=valor] 
+        Selectores compuestos   
+    Selectores agrupados
+    Selectores combinadores
+    Pseudo Clases - Pseudoelementos
+    */
+    /* 
+    *{
+        background-color: aliceblue;
+    }
+    .uwu{
+        background-color:brown;
+    }
+    p{
+        background-color: sienna;
+    }
+    ul{
+        background-color: turquoise;
+    }
+    li{
+        background-color: blanchedalmond;
+    }
+ */
+ [href]{
+     background-color: mediumaquamarine;
+ }
+ [href="/Clase 4/conectar_html.html"]{
+     color: yellow;
+ }
+ [href^="#color"]{/**/
+    background-color: darkorange; /*Verificar el valor del atributo está al principio*/
+ }
+ 
+ [href*="modo"]{
+    background-color:black;/*Selecciona el valor que coincida independientemente de donde este*/
+}
+[href$="rojo"]{
+    background-color: blueviolet;/*Busca los valores que están al final del valor*/
+}
+[lang|="en"]{
+    background-color: violet;/*Acepta todos los valorfes que estan dentro de ese selector*/
+}

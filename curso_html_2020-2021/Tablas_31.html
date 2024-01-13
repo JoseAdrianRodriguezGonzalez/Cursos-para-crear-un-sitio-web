@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        col{
+            background-color: royalblue;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        capitulo #32
+        Las tablas de html sirven para mostrar contenido tabulado
+        Estructura básica de una tabla, se compone de 
+
+        Table-> Etiqueta que encierra una tabla
+        tr-> Table row, etiqueta que construye una fila
+        td-> tabla data, etiqueta que construye una celda
+        capitulo 33#
+        Los titulos de las tablas se establecen con la etiqueta <caption>, es una etiquta opcional y según la especificaciión esa etiqueta se coloca justo despues de la etiqueta table
+            Las cabeceras de las tablas se establecen con la etiqueta <thead>.
+                Después tendremos uan etiquta <tr> normal, pero enel caso de las celdas, las establecermos con la etiqueta <th> en lugar de td
+        El contenido de la tabla debe de ir dentro de una etiqueta <tbody> para representar el cuerpo de la tabla
+            De forma opcional podemos colocar un <tfoot> a la tabla para estableceer un pie de tabla, esto es algo que algunas tablas tiene como suma de cantidades o total
+                capitulo #34
+                Para hacer que las celdas ocupen más de una fila p más de una columna tenemos 2 atritutos
+                rowspan:Sirve para que una celda ocupe más de una fila, el valor por defecto es 1.
+                colspan:sirve para que una celda ocupe más de una columna, el valor por defecto es 1
+Capitulo #35
+                Cuando necesitamos seleccionar una columna, tenemos la etiqueta <colgroup> que nos permite seleccionar una columna en concreto. Dentro podnremos tanta etiquetas col como columnas tengamos, cada etiqueta col equivaldra a una columna siguiendo el mismo orden que tiene la tabla
+                    Si encesitamos que una etiqeuta col agrupe más de una columan, tenemos el atributo "span", que funciona exactamente igual que rowspan
+    -->
+    <h1>Tablas</h1>
+    <table>
+        <caption>HORARIO DE CLASES</caption>
+        <colgroup>
+        <col span="3">
+    </colgroup>
+        <tr>
+            <thead>
+                <th></th>
+                <th>L</th>
+                <th>M</th>
+                <th>X</th>
+                <th>J</th>
+                <th>V</th>
+
+            </thead>
+
+        </tr>
+
+        <tbody>
+        <tr><td>8:30-9:30</td>
+            <td>Matematicas</td>
+        <td>Matematicas</td>
+        <td>Sociales</td>
+        <td>Matematicas</td>
+        <td>Matematicas</td>
+    </tr>
+    <tr>
+        <td>9:30-10:25</td>
+        <td>Lenguas</td>
+        <td>Lengua</td>
+        <td>Matematicas</td>
+        <td>ciencias</td>
+        <td>Lengua</td>
+    </tr>
+    <tr>
+        <td>10:25-11:20</td>
+        <td>Educación física</td>
+        <td>Sociales</td>
+        <td>Lengua</td>
+        <td>Lengua</td>
+        <td>Educación física</td>
+    </tr>
+    <tr>
+        <td>11:20-11:45</td>
+        <td colspan="5">Recreo</td>
+    </tr>
+    <tr>
+        <td>11:45-12:40</td>
+        <td>Inglés</td>
+        <td>Sociales</td>
+        <td>Inglés</td>
+        <td>Tutoria</td>
+        <td>íngles</td>
+    </tr>
+    <tr>
+        <td>12:40-13:35</td>
+        <td>Música</td>
+        <td>Educación física</td>
+        <td>Plástica</td>
+        <td>Religión</td>
+        <td>Música</td>
+    </tr>
+    <tr>
+        <td>13:35-14:30</td>
+        <td>Tecnología</td>
+        <td>Francés</td>
+        <td>Tecnología</td>
+        <td>Francés</td>
+        <td>Tecnología</td>
+    </tr>
+</tbody>
+<tfoot>
+    <tr>
+        <td colspan="5">Número de asignaturas:</td>
+        <td>12</td>
+    </tr>
+</tfoot>
+</table>
+</body>
+</html>

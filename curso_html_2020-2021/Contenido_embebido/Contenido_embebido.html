@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img, video{
+            width: 300px;
+            max-width: 100%;
+        }
+    </style>
+    <!--DPR(Device Pixel Ratio)
+    Es la relación que existe entre los pixeles reales que tiene el dispositivo y los píxeles que tenemos disponibles para pintar contenido
+DPR= pixeles reales/pixeles disponibles-->
+</head>
+<body>
+ <h1>Contenido embebido</h1>   
+ <img src="contenido_embebido.html/assets/images/Gato.webp" alt="Gato caminando"> 
+ <img srcset=", /assets/images/descargar_compu.webp , /assets/images/descargar.webp 2x" alt="">
+<picture>
+    <source srcset=" /assets/images/descargar.webp ,/assets/images/descargar_compu.jpg " media="(max-width: 1000px"> 
+    <img src="/assets/images/descargar_compu.jpg" alt="">
+</picture>
+<audio src="/assets/audio/IMSLP606480-PMLP237526-Sor,_Ländler_in_E-Dur_op._35_Nr._8_(Duda)_.mp3" controls autoplay muted> Sor</audio>
+<video src="/assets/Videos/IMG_2314.MOV" controls muted loop poster="/assets/images/Gato.webp"></video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Vvio6xC4OUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<main>
+    <article>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit optio ullam officiis ad debitis? Officia iure dicta esse nemo soluta similique qui, nesciunt rem necessitatibus perspiciatis voluptas eligendi odit totam!</p>
+    </article>
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam inventore, assumenda expedita alias repudiandae error sunt, reiciendis dolore atque rerum reprehenderit ut non labore aspernatur iste, quia iusto commodi nobis.
+        </p>
+        <figure>
+            <img src="/assets/images/Gato_tumbado.jpg" alt="gato tumbado.jpg">
+        </figure>
+        <article>
+            <p>Lorem ipsum <em> dolor sit </em> amet <strong> consectetur adipisicing elit</strong>. Qui accusamus corporis ut quia hic deserunt! Corporis nulla ut eveniet praesentium quae sed quo iusto consequatur. Sint, quas nihil. Maiores, ex.
+            </p>
+        </article>
+    </section>
+</main>
+</body>
+</html>

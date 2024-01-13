@@ -1,0 +1,28 @@
+ *{
+     box-sizing: border-box;
+ }
+ body{
+    margin: 0;   
+    background-color: dimgray;
+}
+
+.header{
+    height: 200px;
+    background-color: aqua;
+}
+.title{
+    color:white;
+    margin: 0;
+    padding:6%;
+}
+.box1,.box2{
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.box1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

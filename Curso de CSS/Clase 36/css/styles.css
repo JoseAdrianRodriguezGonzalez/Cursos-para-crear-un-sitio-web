@@ -1,0 +1,29 @@
+/*
+    Sticky -> Es una mezcla de position relative y "fixed". Con este tipo de posicionamiento los valores top,left, bottom y right no sirven para mover el elemento, si no para indicarle en que punto pasará a tener un comportamiento similar a fixed, hasta llegar a eese punto se comportará como si o tuvier posicionamiento, aunque si contará comoi posicionado si necesitaramos colocar otro elemento respecto a él (absolute)=
+*/
+*{
+   box-sizing: border-box; 
+}
+body{
+    margin: 0;
+    background-color: dimgray;
+    color: #fff;
+}
+img{
+    width: 100%;
+    display:block;
+}
+
+.header{
+    text-align: center;
+    background-color: greenyellow;
+    color: rebeccapurple;
+    position: sticky;
+    top: 0 ;
+}
+.article-title{
+    position: sticky;
+    top: 15px;
+    margin: 0;
+    background-color: dimgray;
+}

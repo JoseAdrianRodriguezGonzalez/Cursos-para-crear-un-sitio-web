@@ -1,0 +1,16 @@
+/*
+Fuemtes desde un servidor remoto, son fuente que se encuentran en un servidor y que nosotros fdescargamps para su uso, la más famosa es Google fontsd
+
+Siempre que utilizamors fuentes no genericas, debemos poner fuente genericas de fallback,(respaldo)
+Nota: Si vas a usar una gran cantidad de iconps en tu web comepnsa usar la librría remota
+Si solo usaras unos pocos es mejor descargarls en formato svg y utilizarlos como imagen
+*/
+body{
+    background-color: #333;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif
+}
+.icon{
+    font-size: 2rem;
+    color: red;
+}

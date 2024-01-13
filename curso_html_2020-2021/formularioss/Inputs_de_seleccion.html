@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inputs de seleccion</title>
+</head>
+<!--Radio-> Permite selecccionar una única opción de una lista de opciones relacioonada
+Checkbo-> Permite seleccionar varias opciones relacionadas
+Select-> Crea una lista de opciones donde podemos seleccionar una o varias opciones
+Cada opción irá dentor de una etiqueta <option></option>
+Si tenemos muchas opciones podemos ordenarlas por cateogrías a traves de una etiqueta <optgroup> con el atributo label para nombrar la categoría-->
+<body>
+<h1>Elementos seleccionados</h1>
+    <form>
+        <input type="list" list="pets">
+        <datalist id="pets">
+            <option value="Perro">Perro</option>
+            <option value="Gato">Gato</option>
+            <option value="Hamster">Hamster</option>
+            <option value="Conejo">Conejo</option>
+            <option value="Loro">Loro</option>
+            <option value="Canario">canario</option>
+            <option value="Serpiente">Serpiente</option>
+            
+            <option value="Tarántula">Tarántula</option>
+            
+        </datalist>
+        <h2>Género
+        </h2>
+        <div>
+        <label>
+            <input type="radio" name="genero" value="masculino">
+            Hombre
+        </label>
+    </div>
+    <div><label>
+        <input type="radio" name="genero" value="Femenino">Mujer
+       
+    </label></div>
+    
+    <div><label>
+        <input type="radio" name="genero" value="Desconocido">
+        Desconocido
+        
+    </label></div>
+    <h2>Lenguajes que conoces</h2>
+    <label >
+        HTML <input type="checkbox" name="languages" value="HTML">
+    </label>
+    
+    <label >
+        CSS <input type="checkbox" name="languages" value="CSS">
+    </label>
+    
+    <label >
+        JavaScript <input type="checkbox" name="languages" value="JavaScript">
+    </label>
+    <h2>Lenguajes que conoces II</h2>
+    <select name="Languages">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="JavaScript">JavaScript</option>
+    </select>
+    <h2>Mascotas</h2>
+    <select name="mascotas">
+        <optgroup label="4 patas">
+            <option value="Perro">Perro</option>
+            <option value="Gato">Gato</option>
+            <option value="Hamster">Hamster</option>
+            <option value="Conejo">Conejo</option>
+        </optgroup>
+        <optgroup label="aves">
+            <option value="Loro">Loro</option>
+            <option value="Canario">canario</option>
+        </optgroup>
+        <optgroup label="otros">
+            <option value="Serpiente">Serpiente</option>
+            
+            <option value="Tarántula">Tarántula</option>
+        </optgroup>
+    </select>
+    <button>Enviar</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,45 @@
+/*
+    Absolute -> EL elemento perderá sus medidas y espacio resevrado. Si lo  movemos usará el elemento posicionado contenedor como referencia. Si no tiene ninguno, usará el elemento html de referencia
+*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: dimgray;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+.container{
+    background-color: violet;
+    position: absolute;
+    left: 200px;
+    width: 200px;
+    height: 200px;
+}
+.box1{
+    background-color: aqua;
+    position: absolute;
+}
+.box2{
+    background-color: brown;
+    position: absolute;
+    bottom: 0;
+}
+.box3{
+    background-color: steelblue;
+    position: relative;
+    left: 100px;
+}
+.link{
+    background-color: teal;
+    color: aliceblue;
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    bottom: 0;
+}

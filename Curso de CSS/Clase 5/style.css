@@ -1,0 +1,10 @@
+/*
+selector: el elemento al que vamos  cambiar
+propiedad: lo que vamos a cambiar
+valor: el nuevo valor asignado
+declaración= propiedad+valor
+regla=selector+declaración
+*/
+selector{
+    propiedad: valor;
+}

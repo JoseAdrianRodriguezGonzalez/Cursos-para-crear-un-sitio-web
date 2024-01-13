@@ -1,0 +1,23 @@
+/*
+%->Cuando usamos porcentaje usamos de referemncia el tamaño del contenedor y el navegador calcula ese porcentaje, Esto no ocurre cuando usamos transform
+
+
+auto ->Cuando usamos auto le pedimos al navegador que calcule en función del espacio disponible
+*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: dimgray;
+}
+.father{
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+}
+.child{
+    width: 100px;
+    height: 100px;
+    background-color: lightseagreen;
+}

@@ -1,0 +1,47 @@
+/*
+Borde-radius: Es la propiedad que nos permite redondear vertices de forma independiente.
+Es un shorthand que engloba 4 propiedades:
+border-top-left-radius-> Radio del borde superior izquierdo
+border-top-right-radius-> radio del borde superior derecho
+border-bottom-right-radius -> radio del borde inferior derecho
+border-bottom-left-radius -> radio del borde inferior iz<quierdo
+
+Si solo recibe un valor, dibujará un circulo en cada vertice del radio que especifiquemos
+
+border-radius: 50px ->circulo cvon 50 pixeles de radio
+
+Con un solo valor
+border-r4adius:50px; ->Circulo de 50px a cada vertice
+border-radius 50px-100px ->Circulo de 50 px en el vertice superior izquierdo y en el inferior derecho y de 100px en el superior derecho y el inferior izquierdo
+border-radius: 50px 100px 200px ->circulo de 50 px en el vertice superior izquierdo, de 100px en el superior derecho y en el inferior izquierdo y de 200px en el inferior derecho
+border-radius: 50px 100px 200px 300px; -> Circulo de 50 px en el vertice supeerior izquierdo, de 100 px en el superior derecho, de 200px en el inferior derecho y de 300px en el inferior izquierdo 
+radio de borde: 25px / 50px; -> Elipse de 25px en Y y 50px en X a cada vértice.
+ radio de borde: 25px 50px / 50px 100px; -> Elipse de 25px en Y y 50px en X a los vértices superior izquierdo e inferior derecho y una elipse de 50px en Y y 100px en X en los vértices superior derecho e inferior izquierdo.
+ radio de borde: 25px 50px 75px / 50px 100px 150px; ->
+        Elipse de 25px en Y y 50px en X al vértice superior izquierdo, una elipse de 50px en Y y 100px en X en los vértices superior derecho e inferior izquierdo y una elipse de 75px en Y y de 150px en X al vértice inferior derecho.
+ radio de borde: 25px 50px 75px 100px / 50px 100px 150px 200px; -> Elipse de 25px en Y y 50px en X al vértice superior izquierdo, una elipse de 50px en Y y 100px en X en el vértice superior derecho, una elipse de 75px en Y y de 150px en X al vértice inferior derecho y una elipse de 100px en X y 200px en Y en el vértice inferior izquierdo.
+
+*/
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: dimgrey;
+    color: snow;
+    margin: 0;
+}
+.box{
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 150px;
+     background-color: azure;
+     width: 300px;
+     height: 300px;
+     /*border-radius: 50px
+     border-top-right-radius: 200px;
+     border-top-left-radius: 200px;
+     border-bottom-right-radius: 200px;
+     border-bottom-left-radius: 200px;
+     */
+     border-radius: 1000px/170px;
+}

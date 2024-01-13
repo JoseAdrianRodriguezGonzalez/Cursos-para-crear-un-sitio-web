@@ -1,0 +1,72 @@
+/*Selectores simples
+    Selectores elementales
+        *->Selector univseral
+        Nombre de la etiqueta->Selector de etiqueta
+    Selectores de atributo
+        id->Id del elemnto
+        clase-> Clase del elemento
+        otros atributos.
+        [ATRIBUTO] //DAR ESTILOS AL ATRIBUTO    
+        [atributo=valor]//Dar estilos al valor del atributo
+        [atributo^=valor]   //Verificar el valor del atributo es ese
+        [atributo*=valor]//Selecciona el valor que coincida independientemente de donde este
+        [atributo$=valor]//Busca los valores que están al final del valor
+        [atributo|=valor] //acepta todo
+        Selectores compuestos   
+    Selectores agrupados
+        Selectores agrupados-> Se agrupan los selectores separados por comas y se escribe el estilo una sola vez
+    Selectores combinadores
+    selectores descendiente 
+        Selector descendente
+    *//*
+    .text,.text-2,.text-3{
+        background-color: blue;
+    }
+    /* 
+    *{
+        background-color: aliceblue;
+    }
+    .uwu{
+        background-color:brown;
+    }
+    p{
+        background-color: sienna;
+    }
+    ul{
+        background-color: turquoise;
+    }
+    li{
+        background-color: blanchedalmond;
+    }
+*//* 
+ [href]{
+     background-color: mediumaquamarine;
+ }
+ [href="/Clase 4/conectar_html.html"]{
+     color: yellow;
+ }
+ [href^="#color"]{
+    background-color: darkorange;
+ }
+ 
+ [href*="modo"]{
+    background-color:black;
+}
+[href$="rojo"]{
+    background-color: blueviolet;
+}
+[lang|="en"]{
+    background-color: violet;
+}*/
+ div .title-2{
+     background-color: blueviolet;
+ }
+ .uwu + .hola{
+     background-color: blue;
+ }
+    .padre li {
+     background-color: teal;
+ }
+ .padre ~ a{
+     background-color: aqua;
+ }

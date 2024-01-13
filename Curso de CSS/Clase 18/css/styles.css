@@ -1,0 +1,13 @@
+body{
+    background-color: #333;
+    color: #fff;
+}
+.box{
+    background-color: purple;
+    width: 200px; 
+    height: 200px;
+}
+.inline{
+    background-color:lightcoral  ;
+    color: inherit;
+}
