@@ -10,7 +10,7 @@ const multiply=(x,y)=>{
 const divide=(x,y)=>{
     return x/y;
 }
-module.exports={
+export default{
     add,
     sustract,
     multiply,
