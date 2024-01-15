@@ -5,3 +5,4 @@ console.log("adrian".bgRed)
 //-D dependencia para desarrollador
 //-g instalar depenedencia global
 //CLI Common line interface
+//npx, sirve para utilizar nodos pero no instalarlos
