@@ -39,7 +39,7 @@ app.put('/products',(req,res)=>{
 app.delete('/products',(req,res)=>{
     res.send('lista de productos eliminando')
 })
-//similar a patch
+//similar a put
 app.patch('/products',(req,res)=>{
     res.send('lista de productos actualizando')
 })
@@ -82,16 +82,21 @@ app.get('/about',(req,res)=>{
     //  res.sendFile(path.resolve('Express/./static/index.html'),root=__dirname)
       res.send('hello world')
   })
+  //Las peticiones tienen la siguiente estructura
+  /*
+/about  endpoint
+json header
+{}json body*//*
   app.use((req,res)=>{
     res.status(404).send('No existe esa página')
-  })*//*
+  })*//*sirve para extraer un tipo de archivos o mpás bien, leer archivos de este estilo
   app.use(express.text())
   app.use(express.json())
   app.use(express.urlencoded({extended:false}))//Datos extraídos de un formulario
   app.post('/user',(req,res)=>{
     console.log(req.body)
     res.send('Nuevo usuario creado ')
-  })*/
+  })*//* request.params
   app.get('/hello/:name',(req,res)=>{//dato dinamico con :name en forma de params
     console.log(req.params.name)//Coloca el nombre del parametro
     res.send(`Hello ${req.params.name}`)//Coloca este nombre en pantalla
@@ -101,5 +106,37 @@ app.get('/about',(req,res)=>{
     const result=parseInt(x)+parseInt(y)//Se suman los dos valores ya convertidos a entero
     res.send( `Result ${result}`)//Se muestra een pantalla
   })
+  app.get('/users/:username/photo',(req,res)=>{
+    
+    if(req.params.username==="jose"){
+        return res.sendFile(path.resolve('./src/al.txt'),root=__dirname)
+    }
+  })//request queries
+  app.get('/search',(req,res)=>{
+    //queries ?user=algo
+    console.log(req.query);//Saca la lista de busqueda
+    if(req.query.q ==='javascript books'){
+      res.send('lista de libros de javascript')
+    }else{
+      res.send('pagina normal')
+    }
+  })
+  //El metódo all utiliza todos los meotdos http
+  app.all('/info',(req,res)=>{
+    res.send("send info")
+  })*/
+  //  Middleware
+  //loggers son funcion que registran la informacion al servidor 
+ app.use((req,res,next)=>{
+  console.log("Pasó por aquí");
+  next()//Va a continuar con la siguiente ruta
+ })//Tiene que utilizar express la funcion middleware
+  app.get('/dashboard')
+  app.get('/profile',(req,res)=>{
+    res.send("Profile page")
+  })
+  //middleware 2
+
+  //Si se crea otra ruta, también pasara por esta función 
 app.listen(3000)//Se cloca en el servidor en el pueto 3000
 console.log(`Òn port ${3000}`)//Se imprime en consola esto
